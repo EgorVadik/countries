@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 type headerProps = {
     toggleDarkMode: () => void
     darkMode: boolean
@@ -7,9 +9,9 @@ export default function Header({ toggleDarkMode, darkMode }: headerProps) {
     return (
         <header className='h-20 border-b dark:border-0 dark:shadow-md bg-White dark:bg-darkBlue'>
             <div className='container flex pt-6 m-auto text-black dark:text-white px-4 md:px-0'>
-                <p className='text-header font-bold mr-auto'>
+                <Link to={'/'} className='text-header font-bold mr-auto'>
                     Where in the World?
-                </p>
+                </Link>
                 <button onClick={toggleDarkMode}>
                     <div className='flex '>
                         {darkMode ? (

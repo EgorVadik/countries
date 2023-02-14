@@ -1,5 +1,4 @@
 import Header from './components/Header'
-import countriesJson from '../data.json'
 import { useState } from 'react'
 import Home from './components/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -31,5 +30,3 @@ export default function App() {
         </>
     )
 }
-
-export type CountryType = typeof countriesJson[0]

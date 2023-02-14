@@ -1,5 +1,3 @@
-import { CountryType } from '../App'
-
 type cardProps = {
     country: any
 }
@@ -10,14 +8,14 @@ export default function Card({ country }: cardProps) {
             <div className='w-[300px] rounded-md bg-white dark:bg-darkBlue m-auto mt-12 text-black dark:text-White font-semibold shadow-md'>
                 <img
                     src={country.flags.png}
-                    alt={country.name}
+                    alt={country.name.official}
                     height={150}
                     width={300}
                     className='w-{300px} h-[150px] rounded-t-md'
                 />
                 <div className='p-7'>
                     <h4 className='text-xl font-extrabold mb-5'>
-                        {country.name}
+                        {country.name.official}
                     </h4>
                     <p>
                         Population:{' '}
